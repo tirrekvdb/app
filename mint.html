@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     await f0.init({
       web3: new Web3(window.ethereum),
       contract: address,
-      network: c.network
+      network: c.network 
     })
     let invite = await f0.invite(key)
     let placeholder = await f0.placeholder()
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     document.querySelector(".box").innerHTML = template({
       image: placeholder.converted.image,
-      title: `${name} (${symbol})`,
+      title: `${name}`,
       items: items.map((item) => { return { count: item } }),
       max: invite.condition.converted.limit,
       price: `${invite.condition.converted.eth} ETH`,

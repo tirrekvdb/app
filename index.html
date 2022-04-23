@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const placeholder = await f0.placeholder()
     const invites = await f0.myInvites()
     document.querySelector(".box").innerHTML = template({
-      title: `${name} (${symbol}) tirrek`,
+      title: `${name}  `,
       image: placeholder.converted.image,
       items: Object.keys(invites).map((key, index) => {
         return {
@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 </script>
 </head>
 <body>
-
-<div class="p">    <!--  dit is voor wat je erbij wilt dus je kan t er links rechts of onder hebben idk hoe oner tho-->
+<!-- 
+<div class="p">      dit is voor wat je erbij wilt dus je kan t er links rechts of onder hebben idk hoe oner tho
   <div class="title">How was this NFT collection built?</div>
   <div class="well">
     Each Steampunk AI Mutant is based on a generated image, 
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       Number of Subset (up to 4 different art styles per base image)
     </ul>The rarest art style is 4%
     <br>There will be 10 hidden clips of the mutations as super rare items. </div>
-</div>
+</div> -->
 
 <div class='box'></div> <!--dit is voor de box die std erin zit-->
 <br>
